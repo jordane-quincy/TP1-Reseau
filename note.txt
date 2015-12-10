@@ -1,0 +1,7 @@
+TP1
+
+d. Lors de l'émission d'une trame unicast de st4 vers st1, la trame émise
+  arrive quand même jusqu'à st3 (mais celle ci ne s'en sert pas car l'adresse
+   mac de destination de la trame est mac04 de st1). A l'inverse, en broadcast,
+   il n'y a plus de restriction sur l'adresse mac donc st3 et st1 interprete la
+   trame.
