@@ -37,7 +37,7 @@ z. Après la configuration d'écoute des ports de st1 on reçoit bien la requêt
 aa. On active le routage et le NAT/PAT de la machine st1 sur l'interface d'adresse IP 172.11.0.3 (celle connectée au réseau internet)
 Puis on ajoute dans la table NAT/PAT la règle suivante : (SCREEN AA) afin d'acheminer les datagrammes à destination du port TCP 1024 de la machine st1 vers le port TCP 22 de st3
 
-ac :
+ac.
 Etapes en mode manuelle :
 Sur la machine st1
 Chercher la route
@@ -59,3 +59,6 @@ Consulter les ports écoutés => notre requette cherche à atteindre le port 21 
 Editer requêtes reçues => on ajoute dans la liste des requêtes reçues voir de la machine st8 la requête qu'on vient tout juste de recevoir (puis valider) ScreenAC_4
 Préparer message utilisateur => l'envoi a été accepté
 Afficher le message préparé => On indique bien que l'envoi a été accepté à l'utilisateur
+
+ad. Le broadcast depuis st11 se propage jusque st9 et st10 (parce qu'ils sont sur le vlan 2)
+Le broadcast depuis st12 n'atteint aucune autre station (car st12 est seule sur le vlan3)

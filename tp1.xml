@@ -806,15 +806,15 @@
       </ligne>
       <ligne nbValeurs="2" clef="03">
         <valeur>03</valeur>
-        <valeur>1</valeur>
+        <valeur>2</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="04">
         <valeur>04</valeur>
-        <valeur>1</valeur>
+        <valeur>2</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="05">
         <valeur>05</valeur>
-        <valeur>1</valeur>
+        <valeur>3</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="06">
         <valeur>06</valeur>
