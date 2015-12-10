@@ -32,4 +32,4 @@ y. La package arrive bien sur la machine st1, mais la réponse a comme destinati
 hors, la machine st1 ne peut communiquer qu'avec l'adresse IP publique de la machine st5 qui pourra par la suite transferer le package à la machine st7 au sein de son réseau
 La réponse n'arrive donc pas à la machine st7
 
-z.
+z. Après la configuration d'écoute des ports de st1 on reçoit bien la requête depuis st7 et la réponse s'envoie correctement
