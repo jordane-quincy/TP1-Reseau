@@ -21,8 +21,8 @@
     <ConfigIpStation>
       <passerelle>172.11.0.1</passerelle>
       <routageActif>True</routageActif>
-      <natPatActif>False</natPatActif>
-      <carteQuiNat>-1</carteQuiNat>
+      <natPatActif>True</natPatActif>
+      <carteQuiNat>3</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
       <Routes nbLignes="10">
         <ligne nbValeurs="6" clef="01">
@@ -115,7 +115,17 @@
           <valeur>5000</valeur>
         </ligne>
       </PortsEcoutes>
-      <NatPat nbLignes="0" />
+      <NatPat nbLignes="1">
+        <ligne nbValeurs="7" clef="01">
+          <valeur>01</valeur>
+          <valeur>mapping</valeur>
+          <valeur>TCP</valeur>
+          <valeur>172.11.0.3     </valeur>
+          <valeur>1024</valeur>
+          <valeur>192.168.0.3    </valeur>
+          <valeur>22</valeur>
+        </ligne>
+      </NatPat>
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
     <AccesDistant>True</AccesDistant>
