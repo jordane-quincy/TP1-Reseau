@@ -233,7 +233,13 @@
       </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
-      <PortsEcoutes nbLignes="0" />
+      <PortsEcoutes nbLignes="1">
+        <ligne nbValeurs="3" clef="01">
+          <valeur>01</valeur>
+          <valeur>TCP</valeur>
+          <valeur>22</valeur>
+        </ligne>
+      </PortsEcoutes>
       <NatPat nbLignes="0" />
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
