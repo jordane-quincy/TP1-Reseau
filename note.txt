@@ -33,3 +33,29 @@ hors, la machine st1 ne peut communiquer qu'avec l'adresse IP publique de la mac
 La réponse n'arrive donc pas à la machine st7
 
 z. Après la configuration d'écoute des ports de st1 on reçoit bien la requête depuis st7 et la réponse s'envoie correctement
+
+aa. On active le routage et le NAT/PAT de la machine st1 sur l'interface d'adresse IP 172.11.0.3 (celle connectée au réseau internet)
+Puis on ajoute dans la table NAT/PAT la règle suivante : (SCREEN AA) afin d'acheminer les datagrammes à destination du port TCP 1024 de la machine st1 vers le port TCP 22 de st3
+
+ac :
+Etapes en mode manuelle :
+Sur la machine st1
+Chercher la route
+Consulter les règles de filtrage
+Editer requêtes envoyées (ajouter la requête correspondante, ici on doit mettre TCP/172.11.0.3/3688/172.12.0.4/50 screenAC_1) puis valider
+Envoyer le paquet (le paquet s'envoie : ScreenAC_2)
+(La partie internet se gère seule dans le logiciel (en réalité c'est par le FAI) et on arrive sur la station st5)
+Sur la machine st5
+Consulter la configuration IP (on constate qu'on doit modifier le paquet pour l'envoyé sur st8)
+Modifier le paquet : avec les configurations suivantes : ScreenAC_3 puis valider
+Chercher la route (on voit bien qu'on doit joindre l'adresse IP de la machine st8 : 192.168.2.8)
+Règles de filtrage : il n'y a pas de règle de filtrage
+Editer Table NAT/PAT pour voir s'il faut translater => il n'y a pas de translation à faire
+Transmettre le paquet
+Editer Table NAT/PAT pour voir s'il faut translater => ici il ne faut pas translater
+Chercher la route (on est bien sur une adresse locale)
+Consulter règles de filtrage => pas de règles de filtrage
+Consulter les ports écoutés => notre requette cherche à atteindre le port 21 et on l'écoute bien sur notre machine st8
+Editer requêtes reçues => on ajoute dans la liste des requêtes reçues voir de la machine st8 la requête qu'on vient tout juste de recevoir (puis valider) ScreenAC_4
+Préparer message utilisateur => l'envoi a été accepté
+Afficher le message préparé => On indique bien que l'envoi a été accepté à l'utilisateur
