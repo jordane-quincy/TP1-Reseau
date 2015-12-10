@@ -108,12 +108,12 @@
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
-      <passerelle>0.0.0.0</passerelle>
+      <passerelle>192.168.1.1</passerelle>
       <routageActif>False</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="3">
+      <Routes nbLignes="4">
         <ligne nbValeurs="6" clef="01">
           <valeur>01</valeur>
           <valeur>192.168.1.2</valeur>
@@ -135,6 +135,14 @@
           <valeur>192.168.1.255</valeur>
           <valeur>255.255.255.255</valeur>
           <valeur>192.168.1.2</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="04">
+          <valeur>04</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>192.168.1.1</valeur>
           <valeur>192.168.1.2</valeur>
           <valeur>1</valeur>
         </ligne>
