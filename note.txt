@@ -8,5 +8,14 @@ d. Lors de l'émission d'une trame unicast de st4 vers st1, la trame émise
 
 h. Configurer la passerelle (st1) sur st2 pour que st2 puisse répondre au ping de st4.
 
+m. On configure les machines st5/st6/st7/st8 pour qu'elles soient sur le même réseau en leur affectant les ips
+respectives : 192.168.2.5/192.168.2.6/192.168.2.7/192.168.2.8
+Pour faire en sorte que la machine st5 soit la passerelle de ce réseau on configure la passerelle des machines st6/st7/st8 à l'adresse IP de la machine st5 soit 192.168.2.5
+
 p. Pour relier les switchs sans port Uplink, il nous faut utiliser une paire torsadées croisé.
 
+t. Le FAI1 (pour la machine st1) a comme adresse IP 172.11.0.0 (masque : 255.255.0.0)
+Le FAI2 (pour la machine st5) a comme adresse IP 172.12.0.0 (masque : 255.255.0.0)
+Pour les passerelles :
+La machine st1 aura comme passerelle 172.11.0.1 (adresse IP de la machine du FAI connectée à st1 (sur le réseau internet))
+La machine st5 aura comme passerelle 172.12.0.2 (adresse IP de la machine du FAI) connectée à st5 (sur le réseau internet))
