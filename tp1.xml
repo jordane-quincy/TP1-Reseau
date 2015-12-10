@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<simRes version="2.00" nbElements="20">
+<simRes version="2.00" nbElements="23">
   <nbHubs>2</nbHubs>
   <nbSwitch>4</nbSwitch>
   <nbCartesReseau>9</nbCartesReseau>
@@ -331,7 +331,32 @@
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="0" />
+      <Routes nbLignes="3">
+        <ligne nbValeurs="6" clef="01">
+          <valeur>01</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>192.168.2.0</valeur>
+          <valeur>255.255.255.0</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>192.168.2.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>1</valeur>
+        </ligne>
+      </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
       <PortsEcoutes nbLignes="0" />
@@ -344,25 +369,58 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>192.168.2.5</adresse>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
   <station nomNoeud="st6">
     <idNoeud>8</idNoeud>
     <nbPointsConnexion>1</nbPointsConnexion>
-    <Location.X>343</Location.X>
+    <Location.X>342</Location.X>
     <Location.Y>16</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
-      <passerelle>0.0.0.0</passerelle>
+      <passerelle>192.168.2.5</passerelle>
       <routageActif>False</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="0" />
+      <Routes nbLignes="4">
+        <ligne nbValeurs="6" clef="01">
+          <valeur>01</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>192.168.2.0</valeur>
+          <valeur>255.255.255.0</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>192.168.2.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="04">
+          <valeur>04</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>192.168.2.6</valeur>
+          <valeur>1</valeur>
+        </ligne>
+      </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
       <PortsEcoutes nbLignes="0" />
@@ -375,25 +433,58 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>192.168.2.6</adresse>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
   <station nomNoeud="st7">
     <idNoeud>9</idNoeud>
     <nbPointsConnexion>1</nbPointsConnexion>
-    <Location.X>487</Location.X>
-    <Location.Y>43</Location.Y>
+    <Location.X>477</Location.X>
+    <Location.Y>34</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
-      <passerelle>0.0.0.0</passerelle>
+      <passerelle>192.168.2.5</passerelle>
       <routageActif>False</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="0" />
+      <Routes nbLignes="4">
+        <ligne nbValeurs="6" clef="01">
+          <valeur>01</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>192.168.2.0</valeur>
+          <valeur>255.255.255.0</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>192.168.2.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="04">
+          <valeur>04</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>192.168.2.7</valeur>
+          <valeur>1</valeur>
+        </ligne>
+      </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
       <PortsEcoutes nbLignes="0" />
@@ -406,19 +497,19 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>192.168.2.7</adresse>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
   <switch nomNoeud="sw1">
     <idNoeud>10</idNoeud>
-    <nbPointsConnexion>5</nbPointsConnexion>
-    <Location.X>269</Location.X>
-    <Location.Y>107</Location.Y>
+    <nbPointsConnexion>4</nbPointsConnexion>
+    <Location.X>330</Location.X>
+    <Location.Y>112</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
-    <nbPortsNormaux>4</nbPortsNormaux>
+    <nbPortsNormaux>3</nbPortsNormaux>
     <nbPortsCascade>1</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>0</nbPorts802.1q>
@@ -440,30 +531,65 @@
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
-    <PortSwitch numero="5">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
-    </PortSwitch>
     <table_port_vlan nbLignes="0" />
     <table_mac_vlan nbLignes="0" />
   </switch>
   <station nomNoeud="st8">
     <idNoeud>11</idNoeud>
     <nbPointsConnexion>1</nbPointsConnexion>
-    <Location.X>495</Location.X>
-    <Location.Y>201</Location.Y>
+    <Location.X>489</Location.X>
+    <Location.Y>198</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
-      <passerelle>0.0.0.0</passerelle>
+      <passerelle>192.168.2.5</passerelle>
       <routageActif>False</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="0" />
+      <Routes nbLignes="4">
+        <ligne nbValeurs="6" clef="01">
+          <valeur>01</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>192.168.2.0</valeur>
+          <valeur>255.255.255.0</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>192.168.2.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="04">
+          <valeur>04</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>192.168.2.5</valeur>
+          <valeur>192.168.2.8</valeur>
+          <valeur>1</valeur>
+        </ligne>
+      </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
-      <PortsEcoutes nbLignes="0" />
+      <PortsEcoutes nbLignes="1">
+        <ligne nbValeurs="3" clef="01">
+          <valeur>01</valeur>
+          <valeur>TCP</valeur>
+          <valeur>21</valeur>
+        </ligne>
+      </PortsEcoutes>
       <NatPat nbLignes="0" />
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
@@ -473,20 +599,20 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>192.168.2.8</adresse>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
   <switch nomNoeud="sw2">
     <idNoeud>12</idNoeud>
-    <nbPointsConnexion>7</nbPointsConnexion>
-    <Location.X>459</Location.X>
-    <Location.Y>116</Location.Y>
+    <nbPointsConnexion>4</nbPointsConnexion>
+    <Location.X>465</Location.X>
+    <Location.Y>112</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <nbPortsNormaux>4</nbPortsNormaux>
-    <nbPortsCascade>3</nbPortsCascade>
+    <nbPortsCascade>0</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>0</nbPorts802.1q>
     <niveau_vlan>0</niveau_vlan>
@@ -504,18 +630,6 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
     <PortSwitch numero="4">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
-    </PortSwitch>
-    <PortSwitch numero="5">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
-    </PortSwitch>
-    <PortSwitch numero="6">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
-    </PortSwitch>
-    <PortSwitch numero="7">
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
@@ -576,6 +690,30 @@
     <noeudPointA>10</noeudPointA>
     <portPointA>2</portPointA>
     <noeudPointB>8</noeudPointB>
+    <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>10</noeudPointA>
+    <portPointA>4</portPointA>
+    <noeudPointB>12</noeudPointB>
+    <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>9</noeudPointA>
+    <portPointA>1</portPointA>
+    <noeudPointB>12</noeudPointB>
+    <portPointB>2</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>12</noeudPointA>
+    <portPointA>3</portPointA>
+    <noeudPointB>11</noeudPointB>
     <portPointB>1</portPointB>
   </cable>
 </simRes>
