@@ -347,7 +347,7 @@
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
     <AccesDistant>False</AccesDistant>
-    <carte adresseMac="mac05">
+    <carte adresseMac="mac04">
       <PosDemoEmission.X>197</PosDemoEmission.X>
       <PosDemoEmission.Y>414</PosDemoEmission.Y>
       <ConfigIpCarte>
@@ -366,7 +366,7 @@
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
       <passerelle>172.12.0.2</passerelle>
-      <routageActif>False</routageActif>
+      <routageActif>True</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
@@ -430,12 +430,28 @@
       </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
-      <PortsEcoutes nbLignes="0" />
-      <NatPat nbLignes="0" />
+      <PortsEcoutes nbLignes="1">
+        <ligne nbValeurs="3" clef="01">
+          <valeur>01</valeur>
+          <valeur>TCP</valeur>
+          <valeur>50</valeur>
+        </ligne>
+      </PortsEcoutes>
+      <NatPat nbLignes="1">
+        <ligne nbValeurs="7" clef="01">
+          <valeur>01</valeur>
+          <valeur>mapping</valeur>
+          <valeur>TCP</valeur>
+          <valeur>172.12.0.4     </valeur>
+          <valeur>50</valeur>
+          <valeur>192.168.2.8    </valeur>
+          <valeur>21</valeur>
+        </ligne>
+      </NatPat>
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
     <AccesDistant>True</AccesDistant>
-    <carte adresseMac="mac06">
+    <carte adresseMac="mac05">
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
@@ -506,7 +522,7 @@
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
     <AccesDistant>False</AccesDistant>
-    <carte adresseMac="mac07">
+    <carte adresseMac="mac06">
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
@@ -570,7 +586,7 @@
       <ReglesFiltrage nbLignes="0" />
     </ConfigIpStation>
     <AccesDistant>False</AccesDistant>
-    <carte adresseMac="mac08">
+    <carte adresseMac="mac07">
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
