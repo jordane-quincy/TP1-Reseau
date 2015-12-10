@@ -19,3 +19,17 @@ Le FAI2 (pour la machine st5) a comme adresse IP 172.12.0.0 (masque : 255.255.0.
 Pour les passerelles :
 La machine st1 aura comme passerelle 172.11.0.1 (adresse IP de la machine du FAI connectée à st1 (sur le réseau internet))
 La machine st5 aura comme passerelle 172.12.0.2 (adresse IP de la machine du FAI) connectée à st5 (sur le réseau internet))
+
+u. On envoie un ping depuis la machine st1 vers l'adresse IP (172.12.0.4) qui est l'adresse IP de la carte réseau de la machine st5 connectée au réseau internet
+
+v. Effectivement toutes les autres adresses sont bloquées
+
+w. On active le routage et le NAT/PAT de la machine st5 sur l'interface d'adresse IP 172.12.0.4 (celle connectée au réseau internet)
+Puis on ajoute dans la table NAT/PAT la règle suivante : (SCREEN W) afin d'acheminer les datagrammes à destination
+du port TCP 50 vers le port TCP 21 de la machine st8
+
+y. La package arrive bien sur la machine st1, mais la réponse a comme destination l'adresse IP de la machine st7
+hors, la machine st1 ne peut communiquer qu'avec l'adresse IP publique de la machine st5 qui pourra par la suite transferer le package à la machine st7 au sein de son réseau
+La réponse n'arrive donc pas à la machine st7
+
+z.
