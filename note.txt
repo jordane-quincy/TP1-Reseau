@@ -26,4 +26,10 @@ v. Effectivement toutes les autres adresses sont bloquées
 
 w. On active le routage et le NAT/PAT de la machine st5 sur l'interface d'adresse IP 172.12.0.4 (celle connectée au réseau internet)
 Puis on ajoute dans la table NAT/PAT la règle suivante : (SCREEN W) afin d'acheminer les datagrammes à destination
-du port TCP 50 vers le port TCP 21 de la machine st8  
+du port TCP 50 vers le port TCP 21 de la machine st8
+
+y. La package arrive bien sur la machine st1, mais la réponse a comme destination l'adresse IP de la machine st7
+hors, la machine st1 ne peut communiquer qu'avec l'adresse IP publique de la machine st5 qui pourra par la suite transferer le package à la machine st7 au sein de son réseau
+La réponse n'arrive donc pas à la machine st7
+
+z.
