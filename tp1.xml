@@ -20,29 +20,53 @@
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
       <passerelle>0.0.0.0</passerelle>
-      <routageActif>False</routageActif>
+      <routageActif>True</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="3">
+      <Routes nbLignes="6">
         <ligne nbValeurs="6" clef="01">
           <valeur>01</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>192.168.1.0</valeur>
+          <valeur>255.255.255.0</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>192.168.1.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>192.168.1.1</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="04">
+          <valeur>04</valeur>
           <valeur>192.168.0.1</valeur>
           <valeur>255.255.255.255</valeur>
           <valeur>192.168.0.1</valeur>
           <valeur>192.168.0.1</valeur>
           <valeur>1</valeur>
         </ligne>
-        <ligne nbValeurs="6" clef="02">
-          <valeur>02</valeur>
+        <ligne nbValeurs="6" clef="05">
+          <valeur>05</valeur>
           <valeur>192.168.0.0</valeur>
           <valeur>255.255.255.0</valeur>
           <valeur>192.168.0.1</valeur>
           <valeur>192.168.0.1</valeur>
           <valeur>1</valeur>
         </ligne>
-        <ligne nbValeurs="6" clef="03">
-          <valeur>03</valeur>
+        <ligne nbValeurs="6" clef="06">
+          <valeur>06</valeur>
           <valeur>192.168.0.255</valeur>
           <valeur>255.255.255.255</valeur>
           <valeur>192.168.0.1</valeur>
@@ -62,8 +86,8 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>192.168.1.1</adresse>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
     <carte adresseMac="mac04">
@@ -89,7 +113,32 @@
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="0" />
+      <Routes nbLignes="3">
+        <ligne nbValeurs="6" clef="01">
+          <valeur>01</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>192.168.1.0</valeur>
+          <valeur>255.255.255.0</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>192.168.1.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>192.168.1.2</valeur>
+          <valeur>1</valeur>
+        </ligne>
+      </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
       <PortsEcoutes nbLignes="0" />
@@ -98,12 +147,12 @@
     </ConfigIpStation>
     <AccesDistant>False</AccesDistant>
     <carte adresseMac="mac02">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+      <PosDemoEmission.X>55</PosDemoEmission.X>
+      <PosDemoEmission.Y>108</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>192.168.1.2</adresse>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
