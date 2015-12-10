@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<simRes version="2.00" nbElements="4">
-  <nbHubs>0</nbHubs>
+<simRes version="2.00" nbElements="12">
+  <nbHubs>2</nbHubs>
   <nbSwitch>0</nbSwitch>
-  <nbCartesReseau>2</nbCartesReseau>
-  <nbStations>2</nbStations>
-  <dernierIdNoeud>2</dernierIdNoeud>
+  <nbCartesReseau>5</nbCartesReseau>
+  <nbStations>4</nbStations>
+  <dernierIdNoeud>6</dernierIdNoeud>
   <adrReseauInternet1>172.11.0.0</adrReseauInternet1>
   <adrReseauInternet2>172.12.0.0</adrReseauInternet2>
   <adrReseauInternet3>172.13.0.0</adrReseauInternet3>
@@ -13,9 +13,9 @@
   <iconeMessage />
   <station nomNoeud="st1">
     <idNoeud>1</idNoeud>
-    <nbPointsConnexion>1</nbPointsConnexion>
+    <nbPointsConnexion>2</nbPointsConnexion>
     <Location.X>58</Location.X>
-    <Location.Y>54</Location.Y>
+    <Location.Y>139</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
@@ -41,12 +41,21 @@
         <masque>0.0.0.0</masque>
       </ConfigIpCarte>
     </carte>
+    <carte adresseMac="mac04">
+      <PosDemoEmission.X>0</PosDemoEmission.X>
+      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+      <ConfigIpCarte>
+        <clientDhcp>False</clientDhcp>
+        <adresse>0.0.0.0</adresse>
+        <masque>0.0.0.0</masque>
+      </ConfigIpCarte>
+    </carte>
   </station>
   <station nomNoeud="st2">
     <idNoeud>2</idNoeud>
     <nbPointsConnexion>1</nbPointsConnexion>
     <Location.X>58</Location.X>
-    <Location.Y>225</Location.Y>
+    <Location.Y>33</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
@@ -73,12 +82,126 @@
       </ConfigIpCarte>
     </carte>
   </station>
+  <hub nomNoeud="hb1">
+    <idNoeud>3</idNoeud>
+    <nbPointsConnexion>7</nbPointsConnexion>
+    <Location.X>46</Location.X>
+    <Location.Y>274</Location.Y>
+    <PosDemo.X>0</PosDemo.X>
+    <PosDemo.Y>0</PosDemo.Y>
+    <nbPortsNormaux>6</nbPortsNormaux>
+    <nbPortsCascade>1</nbPortsCascade>
+  </hub>
+  <hub nomNoeud="hb2">
+    <idNoeud>4</idNoeud>
+    <nbPointsConnexion>7</nbPointsConnexion>
+    <Location.X>188</Location.X>
+    <Location.Y>274</Location.Y>
+    <PosDemo.X>0</PosDemo.X>
+    <PosDemo.Y>0</PosDemo.Y>
+    <nbPortsNormaux>6</nbPortsNormaux>
+    <nbPortsCascade>1</nbPortsCascade>
+  </hub>
+  <station nomNoeud="st3">
+    <idNoeud>5</idNoeud>
+    <nbPointsConnexion>1</nbPointsConnexion>
+    <Location.X>47</Location.X>
+    <Location.Y>339</Location.Y>
+    <PosDemo.X>0</PosDemo.X>
+    <PosDemo.Y>0</PosDemo.Y>
+    <ConfigIpStation>
+      <passerelle>0.0.0.0</passerelle>
+      <routageActif>False</routageActif>
+      <natPatActif>False</natPatActif>
+      <carteQuiNat>-1</carteQuiNat>
+      <serveurDns>0.0.0.0</serveurDns>
+      <Routes nbLignes="0" />
+      <CacheARP nbLignes="0" />
+      <FichierHosts nbLignes="0" />
+      <PortsEcoutes nbLignes="0" />
+      <NatPat nbLignes="0" />
+      <ReglesFiltrage nbLignes="0" />
+    </ConfigIpStation>
+    <AccesDistant>False</AccesDistant>
+    <carte adresseMac="mac03">
+      <PosDemoEmission.X>0</PosDemoEmission.X>
+      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+      <ConfigIpCarte>
+        <clientDhcp>False</clientDhcp>
+        <adresse>0.0.0.0</adresse>
+        <masque>0.0.0.0</masque>
+      </ConfigIpCarte>
+    </carte>
+  </station>
+  <station nomNoeud="st4">
+    <idNoeud>6</idNoeud>
+    <nbPointsConnexion>1</nbPointsConnexion>
+    <Location.X>200</Location.X>
+    <Location.Y>339</Location.Y>
+    <PosDemo.X>0</PosDemo.X>
+    <PosDemo.Y>0</PosDemo.Y>
+    <ConfigIpStation>
+      <passerelle>0.0.0.0</passerelle>
+      <routageActif>False</routageActif>
+      <natPatActif>False</natPatActif>
+      <carteQuiNat>-1</carteQuiNat>
+      <serveurDns>0.0.0.0</serveurDns>
+      <Routes nbLignes="0" />
+      <CacheARP nbLignes="0" />
+      <FichierHosts nbLignes="0" />
+      <PortsEcoutes nbLignes="0" />
+      <NatPat nbLignes="0" />
+      <ReglesFiltrage nbLignes="0" />
+    </ConfigIpStation>
+    <AccesDistant>False</AccesDistant>
+    <carte adresseMac="mac05">
+      <PosDemoEmission.X>0</PosDemoEmission.X>
+      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+      <ConfigIpCarte>
+        <clientDhcp>False</clientDhcp>
+        <adresse>0.0.0.0</adresse>
+        <masque>0.0.0.0</masque>
+      </ConfigIpCarte>
+    </carte>
+  </station>
   <cable>
     <type>croise</type>
     <longueur>30</longueur>
     <noeudPointA>2</noeudPointA>
     <portPointA>1</portPointA>
     <noeudPointB>1</noeudPointB>
+    <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>1</noeudPointA>
+    <portPointA>2</portPointA>
+    <noeudPointB>3</noeudPointB>
+    <portPointB>3</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>3</noeudPointA>
+    <portPointA>1</portPointA>
+    <noeudPointB>5</noeudPointB>
+    <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>3</noeudPointA>
+    <portPointA>7</portPointA>
+    <noeudPointB>4</noeudPointB>
+    <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>4</noeudPointA>
+    <portPointA>2</portPointA>
+    <noeudPointB>6</noeudPointB>
     <portPointB>1</portPointB>
   </cable>
 </simRes>
