@@ -8,3 +8,5 @@ d. Lors de l'émission d'une trame unicast de st4 vers st1, la trame émise
 
 h. Configurer la passerelle (st1) sur st2 pour que st2 puisse répondre au ping de st4.
 
+p. Pour relier les switchs sans port Uplink, il nous faut utiliser une paire torsadées croisé.
+

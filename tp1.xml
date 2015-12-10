@@ -509,8 +509,8 @@
     <Location.Y>112</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
-    <nbPortsNormaux>3</nbPortsNormaux>
-    <nbPortsCascade>1</nbPortsCascade>
+    <nbPortsNormaux>4</nbPortsNormaux>
+    <nbPortsCascade>0</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>0</nbPorts802.1q>
     <niveau_vlan>0</niveau_vlan>
@@ -695,14 +695,6 @@
   <cable>
     <type>droit</type>
     <longueur>30</longueur>
-    <noeudPointA>10</noeudPointA>
-    <portPointA>4</portPointA>
-    <noeudPointB>12</noeudPointB>
-    <portPointB>1</portPointB>
-  </cable>
-  <cable>
-    <type>droit</type>
-    <longueur>30</longueur>
     <noeudPointA>9</noeudPointA>
     <portPointA>1</portPointA>
     <noeudPointB>12</noeudPointB>
@@ -715,5 +707,13 @@
     <portPointA>3</portPointA>
     <noeudPointB>11</noeudPointB>
     <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>croise</type>
+    <longueur>30</longueur>
+    <noeudPointA>12</noeudPointA>
+    <portPointA>1</portPointA>
+    <noeudPointB>10</noeudPointB>
+    <portPointB>4</portPointB>
   </cable>
 </simRes>
