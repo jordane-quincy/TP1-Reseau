@@ -367,8 +367,8 @@
     <ConfigIpStation>
       <passerelle>172.12.0.2</passerelle>
       <routageActif>True</routageActif>
-      <natPatActif>False</natPatActif>
-      <carteQuiNat>-1</carteQuiNat>
+      <natPatActif>True</natPatActif>
+      <carteQuiNat>2</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
       <Routes nbLignes="7">
         <ligne nbValeurs="6" clef="01">
