@@ -5,3 +5,6 @@ d. Lors de l'émission d'une trame unicast de st4 vers st1, la trame émise
    mac de destination de la trame est mac04 de st1). A l'inverse, en broadcast,
    il n'y a plus de restriction sur l'adresse mac donc st3 et st1 interprete la
    trame.
+
+h. Configurer la passerelle (st1) sur st2 pour que st2 puisse répondre au ping de st4.
+
