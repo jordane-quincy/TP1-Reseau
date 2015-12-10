@@ -16,3 +16,6 @@ p. Pour relier les switchs sans port Uplink, il nous faut utiliser une paire tor
 
 t. Le FAI1 (pour la machine st1) a comme adresse IP 172.11.0.0 (masque : 255.255.0.0)
 Le FAI2 (pour la machine st5) a comme adresse IP 172.12.0.0 (masque : 255.255.0.0)
+Pour les passerelles :
+La machine st1 aura comme passerelle 172.11.0.1 (adresse IP de la machine du FAI connectée à st1 (sur le réseau internet))
+La machine st5 aura comme passerelle 172.12.0.2 (adresse IP de la machine du FAI) connectée à st5 (sur le réseau internet))
