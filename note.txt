@@ -64,12 +64,12 @@ ad. Le broadcast depuis st11 se propage jusque st9 et st10 (parce qu'ils sont su
 Le broadcast depuis st12 n'atteint aucune autre station (car st12 est seule sur le vlan3)
 
 ag. Le broadcast depuis st11 se propage jusque st9 et st10 (parce qu'ils sont sur le vlan 2)
-Le broadcast depuis st12  se propage jusque st13 (car st13 est dans le vlan 3 de sw5 ainsi que son port uplink, donc la trame arrive sur sw4 dans la vlan 2 de ce switch).
-Le broadcast depuis st13  se propage jusque st12 (cf raison ci dessus).
+Le broadcast depuis st12 se propage st9 et jusque st13 (car st13 est dans le vlan 3 de sw5 ainsi que son port uplink, donc la trame arrive sur sw4 dans la vlan 2 de ce switch).
+Le broadcast depuis st13 se propage jusque st12 (cf raison ci dessus).
 Le broadcast depuis st14 n'atteint aucune autre station (car st14 est seule sur le vlan3 de sw4)
 
 ai. Le broadcast depuis st11 se propage jusque st9, st10, st13 (parce qu'ils sont sur le vlan 2 (sur les deux switchs) )
-Le broadcast depuis st12 se propage jusque st14 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
+Le broadcast depuis st12 se propage jusque st9 et st14 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
 Le broadcast depuis st13 se propage jusque st9, st10, st11 (parce qu'ils sont sur le vlan 2 (sur les deux switchs) )
-Le broadcast depuis st14 se propage jusque st12 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
+Le broadcast depuis st14 se propage jusque st9 et st12 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
 
