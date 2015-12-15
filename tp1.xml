@@ -806,11 +806,11 @@
     <table_port_vlan nbLignes="7">
       <ligne nbValeurs="2" clef="01">
         <valeur>01</valeur>
-        <valeur>5</valeur>
+        <valeur>10</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="02">
         <valeur>02</valeur>
-        <valeur>10</valeur>
+        <valeur>5</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="03">
         <valeur>03</valeur>
@@ -836,7 +836,7 @@
     <table_mac_vlan nbLignes="6">
       <ligne nbValeurs="2" clef="mac17">
         <valeur>mac17</valeur>
-        <valeur>5</valeur>
+        <valeur>10</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="mac18">
         <valeur>mac18</valeur>
@@ -852,7 +852,7 @@
       </ligne>
       <ligne nbValeurs="2" clef="mac21">
         <valeur>mac21</valeur>
-        <valeur>10</valeur>
+        <valeur>5</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="mac22">
         <valeur>mac22</valeur>
@@ -957,8 +957,14 @@
       </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
-      <PortsEcoutes nbLignes="0" />
-      <NatPat nbLignes="1">
+      <PortsEcoutes nbLignes="1">
+        <ligne nbValeurs="3" clef="01">
+          <valeur>01</valeur>
+          <valeur>TCP</valeur>
+          <valeur>51</valeur>
+        </ligne>
+      </PortsEcoutes>
+      <NatPat nbLignes="2">
         <ligne nbValeurs="7" clef="01">
           <valeur>01</valeur>
           <valeur>mapping</valeur>
@@ -967,6 +973,15 @@
           <valeur>51</valeur>
           <valeur>10.0.0.13      </valeur>
           <valeur>22</valeur>
+        </ligne>
+        <ligne nbValeurs="7" clef="02">
+          <valeur>02</valeur>
+          <valeur>mapping</valeur>
+          <valeur>TCP</valeur>
+          <valeur>172.12.0.3     </valeur>
+          <valeur>52</valeur>
+          <valeur>172.16.21.12   </valeur>
+          <valeur>80</valeur>
         </ligne>
       </NatPat>
       <ReglesFiltrage nbLignes="0" />
@@ -978,7 +993,7 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>172.16.21.9</adresse>
-        <masque>255.255.0.0</masque>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
     <carte adresseMac="mac21">
@@ -1192,7 +1207,7 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>172.16.21.12</adresse>
-        <masque>255.255.0.0</masque>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
@@ -1425,7 +1440,7 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>172.16.21.14</adresse>
-        <masque>255.255.0.0</masque>
+        <masque>255.255.255.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
