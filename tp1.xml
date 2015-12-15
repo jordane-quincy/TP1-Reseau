@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<simRes version="2.00" nbElements="41">
+<simRes version="2.00" nbElements="42">
   <nbHubs>2</nbHubs>
   <nbSwitch>10</nbSwitch>
   <nbCartesReseau>23</nbCartesReseau>
@@ -802,11 +802,11 @@
     <table_port_vlan nbLignes="6">
       <ligne nbValeurs="2" clef="01">
         <valeur>01</valeur>
-        <valeur>1</valeur>
+        <valeur>5</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="02">
         <valeur>02</valeur>
-        <valeur>1</valeur>
+        <valeur>10</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="03">
         <valeur>03</valeur>
@@ -1493,5 +1493,13 @@
     <portPointA>4</portPointA>
     <noeudPointB>27</noeudPointB>
     <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>16</noeudPointA>
+    <portPointA>7</portPointA>
+    <noeudPointB>25</noeudPointB>
+    <portPointB>9</portPointB>
   </cable>
 </simRes>
