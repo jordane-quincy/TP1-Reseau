@@ -1503,7 +1503,12 @@
         </ligne>
       </Routes>
       <CacheARP nbLignes="0" />
-      <FichierHosts nbLignes="0" />
+      <FichierHosts nbLignes="1">
+        <ligne nbValeurs="2" clef="SAS">
+          <valeur>SAS</valeur>
+          <valeur>172.12.0.3</valeur>
+        </ligne>
+      </FichierHosts>
       <PortsEcoutes nbLignes="0" />
       <NatPat nbLignes="0" />
       <ReglesFiltrage nbLignes="0" />
