@@ -86,3 +86,13 @@ La trame depuis st12 en broadcast arrive que jusque st9 (VLAN 10)
 an. La trame depuis st11 arrive vers st9, st10 et arrive jusqu'au switch sw4 mais sans aller plus loin
 La trame depuis st12 arrive vers st9 et jusqu'au switch sw4 mais sans aller plus loin
 La trame depuis s13 arrive jusqu'au switch sw3 mais sans aller plus loin
+
+ao. La trame depuis st11 arrive vers st9, st10 et st13
+La trame depuis st12 arrive vers st9 et st14
+La trame depuis s13 arrive vers st9, st10 et st11
+La trame depuis st14 arrive vers st9 et st12
+
+ap. Le niveau 2 de VLAN a déjà été paramétré lors du ao. afin de mettre le VLAN 10
+L'envoie des trames et donc le même que pour a0
+
+aq. 
