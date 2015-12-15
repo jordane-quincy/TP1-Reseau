@@ -68,5 +68,8 @@ Le broadcast depuis st12  se propage jusque st13 (car st13 est dans le vlan 3 de
 Le broadcast depuis st13  se propage jusque st12 (cf raison ci dessus).
 Le broadcast depuis st14 n'atteint aucune autre station (car st14 est seule sur le vlan3 de sw4)
 
-
+ai. Le broadcast depuis st11 se propage jusque st9, st10, st13 (parce qu'ils sont sur le vlan 2 (sur les deux switchs) )
+Le broadcast depuis st12 se propage jusque st14 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
+Le broadcast depuis st13 se propage jusque st9, st10, st11 (parce qu'ils sont sur le vlan 2 (sur les deux switchs) )
+Le broadcast depuis st14 se propage jusque st12 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
 

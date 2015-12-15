@@ -760,15 +760,15 @@
   </internet>
   <switch nomNoeud="sw5">
     <idNoeud>16</idNoeud>
-    <nbPointsConnexion>6</nbPointsConnexion>
-    <Location.X>349</Location.X>
-    <Location.Y>265</Location.Y>
+    <nbPointsConnexion>7</nbPointsConnexion>
+    <Location.X>379</Location.X>
+    <Location.Y>261</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <nbPortsNormaux>5</nbPortsNormaux>
     <nbPortsCascade>1</nbPortsCascade>
     <spanningTree>True</spanningTree>
-    <nbPorts802.1q>0</nbPorts802.1q>
+    <nbPorts802.1q>1</nbPorts802.1q>
     <niveau_vlan>1</niveau_vlan>
     <typeSwitch>storeAndForward</typeSwitch>
     <PortSwitch numero="1">
@@ -792,6 +792,10 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
     <PortSwitch numero="6">
+      <PosDemoEmission.X>0</PosDemoEmission.X>
+      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+    </PortSwitch>
+    <PortSwitch numero="7">
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
@@ -958,7 +962,7 @@
   </station>
   <switch nomNoeud="sw4">
     <idNoeud>25</idNoeud>
-    <nbPointsConnexion>8</nbPointsConnexion>
+    <nbPointsConnexion>9</nbPointsConnexion>
     <Location.X>623</Location.X>
     <Location.Y>265</Location.Y>
     <PosDemo.X>0</PosDemo.X>
@@ -966,7 +970,7 @@
     <nbPortsNormaux>4</nbPortsNormaux>
     <nbPortsCascade>4</nbPortsCascade>
     <spanningTree>True</spanningTree>
-    <nbPorts802.1q>0</nbPorts802.1q>
+    <nbPorts802.1q>1</nbPorts802.1q>
     <niveau_vlan>1</niveau_vlan>
     <typeSwitch>storeAndForward</typeSwitch>
     <PortSwitch numero="1">
@@ -998,6 +1002,10 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
     <PortSwitch numero="8">
+      <PosDemoEmission.X>0</PosDemoEmission.X>
+      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+    </PortSwitch>
+    <PortSwitch numero="9">
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
@@ -1238,14 +1246,6 @@
   <cable>
     <type>droit</type>
     <longueur>30</longueur>
-    <noeudPointA>16</noeudPointA>
-    <portPointA>6</portPointA>
-    <noeudPointB>25</noeudPointB>
-    <portPointB>1</portPointB>
-  </cable>
-  <cable>
-    <type>droit</type>
-    <longueur>30</longueur>
     <noeudPointA>25</noeudPointA>
     <portPointA>3</portPointA>
     <noeudPointB>26</noeudPointB>
@@ -1258,5 +1258,13 @@
     <portPointA>4</portPointA>
     <noeudPointB>27</noeudPointB>
     <portPointB>1</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>16</noeudPointA>
+    <portPointA>7</portPointA>
+    <noeudPointB>25</noeudPointB>
+    <portPointB>9</portPointB>
   </cable>
 </simRes>
