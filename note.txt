@@ -101,3 +101,19 @@ La trame st11 arrive vers st9, st10, st13 et le switch sw4 (VLAN 5)
 La trame st12 arrive vers st9, st14 (VLAN 10)
 La trame st13 arrive vers st9, st10, st11 et le switch sw4 (VLAN 5)
 La trame st14 arrive vers st9 et st12 (VLAN 10)
+
+ar.
+st9 et st14 sont déjà reliés
+
+as.
+st9 est bien la passerelle
+
+at.
+On ajoute une carte d'accès distant sur st9 qu'on va relier sur le réseau Internet en utilisant un cable de type "ligne telecom"
+Mettre comme passerelle pour st9 la carte sur le réseau internet d'ip : 172.12.0.1
+On fait écouter le port TCP 22 (ssh) sur st13
+On fait écouter le port TCP 80 (serveur web) sur st12
+On fait écouter le port TCP 21 (ftp) sur st13
+Pour la NAT il faut configurer :
+
+av.
