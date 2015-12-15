@@ -114,6 +114,11 @@ Mettre comme passerelle pour st9 la carte sur le réseau internet d'ip : 172.12.
 On fait écouter le port TCP 22 (ssh) sur st13
 On fait écouter le port TCP 80 (serveur web) sur st12
 On fait écouter le port TCP 21 (ftp) sur st13
-Pour la NAT il faut configurer :
+Pour la NAT il faut configurer sur la machine st9 la table NAT/PAT comme ceci: screenAU
+Et on fait écouter les ports 50, 51, 52 sur st9
+
+au.
+Les requêtes s'envoient correctement et on reçoit bien les réponses
 
 av.
+On ajoute une station st15 avec une carte d'accès distant qu'on relie à internet par un cable de type ligne telecom
