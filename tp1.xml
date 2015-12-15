@@ -957,14 +957,24 @@
       </Routes>
       <CacheARP nbLignes="0" />
       <FichierHosts nbLignes="0" />
-      <PortsEcoutes nbLignes="1">
+      <PortsEcoutes nbLignes="3">
         <ligne nbValeurs="3" clef="01">
           <valeur>01</valeur>
           <valeur>TCP</valeur>
           <valeur>51</valeur>
         </ligne>
+        <ligne nbValeurs="3" clef="02">
+          <valeur>02</valeur>
+          <valeur>TCP</valeur>
+          <valeur>52</valeur>
+        </ligne>
+        <ligne nbValeurs="3" clef="03">
+          <valeur>03</valeur>
+          <valeur>TCP</valeur>
+          <valeur>53</valeur>
+        </ligne>
       </PortsEcoutes>
-      <NatPat nbLignes="2">
+      <NatPat nbLignes="3">
         <ligne nbValeurs="7" clef="01">
           <valeur>01</valeur>
           <valeur>mapping</valeur>
@@ -982,6 +992,15 @@
           <valeur>52</valeur>
           <valeur>172.16.21.12   </valeur>
           <valeur>80</valeur>
+        </ligne>
+        <ligne nbValeurs="7" clef="03">
+          <valeur>03</valeur>
+          <valeur>mapping</valeur>
+          <valeur>TCP</valeur>
+          <valeur>172.12.0.3     </valeur>
+          <valeur>53</valeur>
+          <valeur>10.0.0.13      </valeur>
+          <valeur>21</valeur>
         </ligne>
       </NatPat>
       <ReglesFiltrage nbLignes="0" />
