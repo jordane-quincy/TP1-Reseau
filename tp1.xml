@@ -1140,7 +1140,7 @@
     <nbPortsCascade>4</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>1</nbPorts802.1q>
-    <niveau_vlan>1</niveau_vlan>
+    <niveau_vlan>2</niveau_vlan>
     <typeSwitch>storeAndForward</typeSwitch>
     <PortSwitch numero="1">
       <PosDemoEmission.X>0</PosDemoEmission.X>
@@ -1181,7 +1181,7 @@
     <table_port_vlan nbLignes="8">
       <ligne nbValeurs="2" clef="01">
         <valeur>01</valeur>
-        <valeur>2</valeur>
+        <valeur>1</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="02">
         <valeur>02</valeur>
@@ -1189,11 +1189,11 @@
       </ligne>
       <ligne nbValeurs="2" clef="03">
         <valeur>03</valeur>
-        <valeur>2</valeur>
+        <valeur>1</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="04">
         <valeur>04</valeur>
-        <valeur>3</valeur>
+        <valeur>1</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="05">
         <valeur>05</valeur>
@@ -1212,7 +1212,16 @@
         <valeur>1</valeur>
       </ligne>
     </table_port_vlan>
-    <table_mac_vlan nbLignes="0" />
+    <table_mac_vlan nbLignes="2">
+      <ligne nbValeurs="2" clef="mac22">
+        <valeur>mac22</valeur>
+        <valeur>5</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="mac23">
+        <valeur>mac23</valeur>
+        <valeur>10</valeur>
+      </ligne>
+    </table_mac_vlan>
   </switch>
   <station nomNoeud="st13">
     <idNoeud>26</idNoeud>
