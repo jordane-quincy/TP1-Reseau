@@ -1003,7 +1003,7 @@
           <valeur>21</valeur>
         </ligne>
       </NatPat>
-      <ReglesFiltrage nbLignes="6">
+      <ReglesFiltrage nbLignes="7">
         <ligne nbValeurs="9" clef="01">
           <valeur>01</valeur>
           <valeur>*</valeur>
@@ -1061,6 +1061,17 @@
         </ligne>
         <ligne nbValeurs="9" clef="06">
           <valeur>06</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>TCP</valeur>
+          <valeur>*</valeur>
+          <valeur>22</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="07">
+          <valeur>07</valeur>
           <valeur>*</valeur>
           <valeur>*</valeur>
           <valeur>*</valeur>
@@ -1538,33 +1549,65 @@
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
-      <passerelle>0.0.0.0</passerelle>
+      <passerelle>172.11.0.2</passerelle>
       <routageActif>False</routageActif>
       <natPatActif>False</natPatActif>
       <carteQuiNat>-1</carteQuiNat>
       <serveurDns>0.0.0.0</serveurDns>
-      <Routes nbLignes="3">
+      <Routes nbLignes="7">
         <ligne nbValeurs="6" clef="01">
           <valeur>01</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="02">
+          <valeur>02</valeur>
+          <valeur>59.0.0.0</valeur>
+          <valeur>255.0.0.0</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="03">
+          <valeur>03</valeur>
+          <valeur>59.255.255.255</valeur>
+          <valeur>255.255.255.255</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>59.0.0.15</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="04">
+          <valeur>04</valeur>
           <valeur>172.11.0.4</valeur>
           <valeur>255.255.255.255</valeur>
           <valeur>172.11.0.4</valeur>
           <valeur>172.11.0.4</valeur>
           <valeur>1</valeur>
         </ligne>
-        <ligne nbValeurs="6" clef="02">
-          <valeur>02</valeur>
+        <ligne nbValeurs="6" clef="05">
+          <valeur>05</valeur>
           <valeur>172.11.0.0</valeur>
           <valeur>255.255.0.0</valeur>
           <valeur>172.11.0.4</valeur>
           <valeur>172.11.0.4</valeur>
           <valeur>1</valeur>
         </ligne>
-        <ligne nbValeurs="6" clef="03">
-          <valeur>03</valeur>
+        <ligne nbValeurs="6" clef="06">
+          <valeur>06</valeur>
           <valeur>172.11.255.255</valeur>
           <valeur>255.255.255.255</valeur>
           <valeur>172.11.0.4</valeur>
+          <valeur>172.11.0.4</valeur>
+          <valeur>1</valeur>
+        </ligne>
+        <ligne nbValeurs="6" clef="07">
+          <valeur>07</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>0.0.0.0</valeur>
+          <valeur>172.11.0.2</valeur>
           <valeur>172.11.0.4</valeur>
           <valeur>1</valeur>
         </ligne>
@@ -1586,8 +1629,8 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
-        <adresse>0.0.0.0</adresse>
-        <masque>0.0.0.0</masque>
+        <adresse>59.0.0.15</adresse>
+        <masque>255.0.0.0</masque>
       </ConfigIpCarte>
     </carte>
     <carteAccesDistant adresseMac="mac27">
