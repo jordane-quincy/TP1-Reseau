@@ -62,3 +62,11 @@ Afficher le message préparé => On indique bien que l'envoi a été accepté à
 
 ad. Le broadcast depuis st11 se propage jusque st9 et st10 (parce qu'ils sont sur le vlan 2)
 Le broadcast depuis st12 n'atteint aucune autre station (car st12 est seule sur le vlan3)
+
+ag. Le broadcast depuis st11 se propage jusque st9 et st10 (parce qu'ils sont sur le vlan 2)
+Le broadcast depuis st12  se propage jusque st13 (car st13 est dans le vlan 3 de sw5 ainsi que son port uplink, donc la trame arrive sur sw4 dans la vlan 2 de ce switch).
+Le broadcast depuis st13  se propage jusque st12 (cf raison ci dessus).
+Le broadcast depuis st14 n'atteint aucune autre station (car st14 est seule sur le vlan3 de sw4)
+
+
+

@@ -967,7 +967,7 @@
     <nbPortsCascade>4</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>0</nbPorts802.1q>
-    <niveau_vlan>0</niveau_vlan>
+    <niveau_vlan>1</niveau_vlan>
     <typeSwitch>storeAndForward</typeSwitch>
     <PortSwitch numero="1">
       <PosDemoEmission.X>0</PosDemoEmission.X>
@@ -1001,7 +1001,40 @@
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
-    <table_port_vlan nbLignes="0" />
+    <table_port_vlan nbLignes="8">
+      <ligne nbValeurs="2" clef="01">
+        <valeur>01</valeur>
+        <valeur>2</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="02">
+        <valeur>02</valeur>
+        <valeur>1</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="03">
+        <valeur>03</valeur>
+        <valeur>2</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="04">
+        <valeur>04</valeur>
+        <valeur>3</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="05">
+        <valeur>05</valeur>
+        <valeur>1</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="06">
+        <valeur>06</valeur>
+        <valeur>1</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="07">
+        <valeur>07</valeur>
+        <valeur>1</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="08">
+        <valeur>08</valeur>
+        <valeur>1</valeur>
+      </ligne>
+    </table_port_vlan>
     <table_mac_vlan nbLignes="0" />
   </switch>
   <station nomNoeud="st13">
@@ -1057,8 +1090,8 @@
     </ConfigIpStation>
     <AccesDistant>False</AccesDistant>
     <carte adresseMac="mac23">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+      <PosDemoEmission.X>1096</PosDemoEmission.X>
+      <PosDemoEmission.Y>586</PosDemoEmission.Y>
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>0.0.0.0</adresse>
