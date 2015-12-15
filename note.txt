@@ -122,3 +122,4 @@ Les requêtes s'envoient correctement et on reçoit bien les réponses
 
 av.
 On ajoute une station st15 avec une carte d'accès distant qu'on relie à internet par un cable de type ligne telecom
+Adresse ip du poste : 172.11.0.4
