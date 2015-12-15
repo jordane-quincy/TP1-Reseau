@@ -1003,7 +1003,74 @@
           <valeur>21</valeur>
         </ligne>
       </NatPat>
-      <ReglesFiltrage nbLignes="0" />
+      <ReglesFiltrage nbLignes="6">
+        <ligne nbValeurs="9" clef="01">
+          <valeur>01</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>TCP</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>80</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="02">
+          <valeur>02</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>TCP</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>21</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="03">
+          <valeur>03</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>TCP</valeur>
+          <valeur>*</valeur>
+          <valeur>80</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="04">
+          <valeur>04</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>TCP</valeur>
+          <valeur>*</valeur>
+          <valeur>21</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="05">
+          <valeur>05</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>TCP</valeur>
+          <valeur>172.11.0.4/32</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>22</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="06">
+          <valeur>06</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>Bloquer</valeur>
+        </ligne>
+      </ReglesFiltrage>
     </ConfigIpStation>
     <AccesDistant>True</AccesDistant>
     <carte adresseMac="mac17">
