@@ -95,4 +95,9 @@ La trame depuis st14 arrive vers st9 et st12
 ap. Le niveau 2 de VLAN a déjà été paramétré lors du ao. afin de mettre le VLAN 10
 L'envoie des trames et donc le même que pour a0
 
-aq. 
+aq.
+On ajoute un port sur le switch sw3 sur le VLAN 5 et on le connecte à st13 (en le deconnectant de sw4)
+La trame st11 arrive vers st9, st10, st13 et le switch sw4 (VLAN 5)
+La trame st12 arrive vers st9, st14 (VLAN 10)
+La trame st13 arrive vers st9, st10, st11 et le switch sw4 (VLAN 5)
+La trame st14 arrive vers st9 et st12 (VLAN 10)
