@@ -760,12 +760,12 @@
   </internet>
   <switch nomNoeud="sw3">
     <idNoeud>16</idNoeud>
-    <nbPointsConnexion>7</nbPointsConnexion>
+    <nbPointsConnexion>8</nbPointsConnexion>
     <Location.X>379</Location.X>
     <Location.Y>261</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
-    <nbPortsNormaux>5</nbPortsNormaux>
+    <nbPortsNormaux>6</nbPortsNormaux>
     <nbPortsCascade>1</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>1</nbPorts802.1q>
@@ -799,7 +799,11 @@
       <PosDemoEmission.X>0</PosDemoEmission.X>
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
-    <table_port_vlan nbLignes="6">
+    <PortSwitch numero="8">
+      <PosDemoEmission.X>0</PosDemoEmission.X>
+      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+    </PortSwitch>
+    <table_port_vlan nbLignes="7">
       <ligne nbValeurs="2" clef="01">
         <valeur>01</valeur>
         <valeur>5</valeur>
@@ -824,8 +828,12 @@
         <valeur>06</valeur>
         <valeur>1</valeur>
       </ligne>
+      <ligne nbValeurs="2" clef="07">
+        <valeur>07</valeur>
+        <valeur>1</valeur>
+      </ligne>
     </table_port_vlan>
-    <table_mac_vlan nbLignes="5">
+    <table_mac_vlan nbLignes="6">
       <ligne nbValeurs="2" clef="mac17">
         <valeur>mac17</valeur>
         <valeur>5</valeur>
@@ -845,6 +853,10 @@
       <ligne nbValeurs="2" clef="mac21">
         <valeur>mac21</valeur>
         <valeur>10</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="mac22">
+        <valeur>mac22</valeur>
+        <valeur>5</valeur>
       </ligne>
     </table_mac_vlan>
   </switch>
@@ -1193,7 +1205,7 @@
       </ligne>
       <ligne nbValeurs="2" clef="04">
         <valeur>04</valeur>
-        <valeur>1</valeur>
+        <valeur>10</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="05">
         <valeur>05</valeur>
@@ -1491,14 +1503,6 @@
     <type>droit</type>
     <longueur>30</longueur>
     <noeudPointA>25</noeudPointA>
-    <portPointA>3</portPointA>
-    <noeudPointB>26</noeudPointB>
-    <portPointB>1</portPointB>
-  </cable>
-  <cable>
-    <type>droit</type>
-    <longueur>30</longueur>
-    <noeudPointA>25</noeudPointA>
     <portPointA>4</portPointA>
     <noeudPointB>27</noeudPointB>
     <portPointB>1</portPointB>
@@ -1507,8 +1511,16 @@
     <type>droit</type>
     <longueur>30</longueur>
     <noeudPointA>16</noeudPointA>
-    <portPointA>7</portPointA>
+    <portPointA>8</portPointA>
     <noeudPointB>25</noeudPointB>
     <portPointB>9</portPointB>
+  </cable>
+  <cable>
+    <type>droit</type>
+    <longueur>30</longueur>
+    <noeudPointA>16</noeudPointA>
+    <portPointA>6</portPointA>
+    <noeudPointB>26</noeudPointB>
+    <portPointB>1</portPointB>
   </cable>
 </simRes>
