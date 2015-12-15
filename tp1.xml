@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<simRes version="2.00" nbElements="42">
+<simRes version="2.00" nbElements="41">
   <nbHubs>2</nbHubs>
   <nbSwitch>10</nbSwitch>
   <nbCartesReseau>23</nbCartesReseau>
@@ -769,7 +769,7 @@
     <nbPortsCascade>1</nbPortsCascade>
     <spanningTree>True</spanningTree>
     <nbPorts802.1q>1</nbPorts802.1q>
-    <niveau_vlan>1</niveau_vlan>
+    <niveau_vlan>2</niveau_vlan>
     <typeSwitch>storeAndForward</typeSwitch>
     <PortSwitch numero="1">
       <PosDemoEmission.X>0</PosDemoEmission.X>
@@ -802,30 +802,51 @@
     <table_port_vlan nbLignes="6">
       <ligne nbValeurs="2" clef="01">
         <valeur>01</valeur>
-        <valeur>3</valeur>
+        <valeur>1</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="02">
         <valeur>02</valeur>
-        <valeur>2</valeur>
+        <valeur>1</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="03">
         <valeur>03</valeur>
-        <valeur>2</valeur>
+        <valeur>5</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="04">
         <valeur>04</valeur>
-        <valeur>2</valeur>
+        <valeur>5</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="05">
         <valeur>05</valeur>
-        <valeur>3</valeur>
+        <valeur>10</valeur>
       </ligne>
       <ligne nbValeurs="2" clef="06">
         <valeur>06</valeur>
-        <valeur>3</valeur>
+        <valeur>1</valeur>
       </ligne>
     </table_port_vlan>
-    <table_mac_vlan nbLignes="0" />
+    <table_mac_vlan nbLignes="5">
+      <ligne nbValeurs="2" clef="mac17">
+        <valeur>mac17</valeur>
+        <valeur>5</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="mac18">
+        <valeur>mac18</valeur>
+        <valeur>5</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="mac19">
+        <valeur>mac19</valeur>
+        <valeur>5</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="mac20">
+        <valeur>mac20</valeur>
+        <valeur>10</valeur>
+      </ligne>
+      <ligne nbValeurs="2" clef="mac21">
+        <valeur>mac21</valeur>
+        <valeur>10</valeur>
+      </ligne>
+    </table_mac_vlan>
   </switch>
   <station nomNoeud="st9">
     <idNoeud>18</idNoeud>
@@ -912,15 +933,15 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>10.0.0.9</adresse>
-        <masque>255.0.0.0</masque>
+        <masque>255.255.0.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
   <station nomNoeud="st10">
     <idNoeud>20</idNoeud>
     <nbPointsConnexion>1</nbPointsConnexion>
-    <Location.X>338</Location.X>
-    <Location.Y>320</Location.Y>
+    <Location.X>331</Location.X>
+    <Location.Y>325</Location.Y>
     <PosDemo.X>0</PosDemo.X>
     <PosDemo.Y>0</PosDemo.Y>
     <ConfigIpStation>
@@ -976,7 +997,7 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>10.0.0.10</adresse>
-        <masque>255.0.0.0</masque>
+        <masque>255.255.0.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
@@ -1040,7 +1061,7 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>10.0.0.11</adresse>
-        <masque>255.0.0.0</masque>
+        <masque>255.255.0.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
@@ -1253,7 +1274,7 @@
       <ConfigIpCarte>
         <clientDhcp>False</clientDhcp>
         <adresse>10.0.0.13</adresse>
-        <masque>255.0.0.0</masque>
+        <masque>255.255.0.0</masque>
       </ConfigIpCarte>
     </carte>
   </station>
@@ -1472,13 +1493,5 @@
     <portPointA>4</portPointA>
     <noeudPointB>27</noeudPointB>
     <portPointB>1</portPointB>
-  </cable>
-  <cable>
-    <type>droit</type>
-    <longueur>30</longueur>
-    <noeudPointA>16</noeudPointA>
-    <portPointA>7</portPointA>
-    <noeudPointB>25</noeudPointB>
-    <portPointB>9</portPointB>
   </cable>
 </simRes>
