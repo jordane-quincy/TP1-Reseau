@@ -758,7 +758,7 @@
     <macPort3>mac13</macPort3>
     <macPort4>mac14</macPort4>
   </internet>
-  <switch nomNoeud="sw5">
+  <switch nomNoeud="sw3">
     <idNoeud>16</idNoeud>
     <nbPointsConnexion>7</nbPointsConnexion>
     <Location.X>379</Location.X>
