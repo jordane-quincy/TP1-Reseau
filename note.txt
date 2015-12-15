@@ -115,3 +115,5 @@ On fait écouter le port TCP 22 (ssh) sur st13
 On fait écouter le port TCP 80 (serveur web) sur st12
 On fait écouter le port TCP 21 (ftp) sur st13
 Pour la NAT il faut configurer :
+
+av.
