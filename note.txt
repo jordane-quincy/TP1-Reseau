@@ -123,3 +123,8 @@ Les requêtes s'envoient correctement et on reçoit bien les réponses
 av.
 On ajoute une station st15 avec une carte d'accès distant qu'on relie à internet par un cable de type ligne telecom
 Adresse ip du poste : 172.11.0.4
+
+aw.
+
+ax. Configurer les règles de filtrage comme ceci :
+Requête de st15 vers serveur SSH (en utilisant l'adresse IP SAS) arrive (vers st13) la réponse est bien récupérer
