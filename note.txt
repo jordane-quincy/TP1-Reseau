@@ -73,3 +73,16 @@ Le broadcast depuis st12 se propage jusque st9 et st14 (parce qu'ils sont sur le
 Le broadcast depuis st13 se propage jusque st9, st10, st11 (parce qu'ils sont sur le vlan 2 (sur les deux switchs) )
 Le broadcast depuis st14 se propage jusque st9 et st12 (parce qu'ils sont sur le vlan 3 (sur les deux switchs) )
 
+aj. Mettre les adresses IP sur les mahcines du VLAN 2 (st9 : 10.0.0.9; st10 : 10.0.0.10; st11: 10.0.0.11; st13 : 10.0.0.13) et VLAN 3 (st12: 172.16.21.12; st14 : 172.16.21.14)
+Acitver routage sur st9 et faire de st9 la passerelle en parametrant la passerelle de chaque machine du VLAN 2 à 10.0.0.9 (carte réseau de la machine st9 sur la VLAN 2)
+et chaque machine du VLAN 3 à 172.16.21.9 (carte réseau de la machine st9 sur la VLAN 3)
+
+al. Il faut ajouter un port sur le switch sw3 qui doit être dans le VLAN 3
+
+am. Lors du passage en VLAN de niveau les VLAN de niveau 1 sont supprimés il faut donc reconfigurer la partie VLAN en remplaçant le VLAN 2 par le VLAN 5 et le VLAN 3 par le VLAN 10
+La trame depuis st11 en broadcast arrive vers st10 et st9 (VLAN 5)
+La trame depuis st12 en broadcast arrive que jusque st9 (VLAN 10)
+
+an. La trame depuis st11 arrive vers st9, st10 et arrive jusqu'au switch sw4 mais sans aller plus loin
+La trame depuis st12 arrive vers st9 et jusqu'au switch sw4 mais sans aller plus loin
+La trame depuis s13 arrive jusqu'au switch sw3 mais sans aller plus loin
