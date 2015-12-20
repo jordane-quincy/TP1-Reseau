@@ -135,9 +135,9 @@ Requête de st5 vers l'adresse IP 172.12.0.3 sur le port 52 arrive bien jusqu'au
 Requête de st5 vers l'adresse IP 172.12.0.3 sur le port 53 arrive bien jusqu'au serveur ftp de st13 et celui ci peut répondre.
 Requête de st5 vers l'adresse IP 172.12.0.3 sur le port 51 arrive bien jusqu'a la station st9 qui la bloque (conformément à la politique de blocage qui n'autorise que st15 pour le ssh).
 
+ay.
 Requête de st13 vers l'adresse IP 172.12.0.4 sur le port 50 arrive bien jusqu'a la station st9 qui la bloque (conformément à la politique de blocage).
 Requête de st14 vers l'adresse IP 172.12.0.4 sur le port 50 arrive bien jusqu'a la station st9 qui la bloque (conformément à la politique de blocage).
 
 	TODO : Tester de st13 et st14 le serveur Web de st8 (qui n'existe pas). --> Comment savoir quel port publique utilisé ?
 
-ay.
