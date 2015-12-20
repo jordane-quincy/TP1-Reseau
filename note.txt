@@ -125,6 +125,19 @@ On ajoute une station st15 avec une carte d'accès distant qu'on relie à intern
 Adresse ip du poste : 172.11.0.4
 
 aw.
+Ajout dans le fichier host de st15 l'hote SAS correspondant à l'adresse IP 172.12.0.3
 
-ax. Configurer les règles de filtrage comme ceci :
-Requête de st15 vers serveur SSH (en utilisant l'adresse IP SAS) arrive (vers st13) la réponse est bien récupérer
+ax. Configurer les règles de filtrage comme ceci (SCREEN AX)
+Requête de st15 vers serveur SSH (en utilisant le nom d'hôte "SAS") arrive (vers st13) la réponse est bien récupérer
+
+Requête de st5 vers le nom d'hôte "SAS" aboutie à une erreur (la table host de st5 étant vide contrairement à celle de st15)
+Requête de st5 vers l'adresse IP 172.12.0.3 sur le port 52 arrive bien jusqu'au serveur web de st12 et celui ci peut répondre.
+Requête de st5 vers l'adresse IP 172.12.0.3 sur le port 53 arrive bien jusqu'au serveur ftp de st13 et celui ci peut répondre.
+Requête de st5 vers l'adresse IP 172.12.0.3 sur le port 51 arrive bien jusqu'a la station st9 qui la bloque (conformément à la politique de blocage qui n'autorise que st15 pour le ssh).
+
+Requête de st13 vers l'adresse IP 172.12.0.4 sur le port 50 arrive bien jusqu'a la station st9 qui la bloque (conformément à la politique de blocage).
+Requête de st14 vers l'adresse IP 172.12.0.4 sur le port 50 arrive bien jusqu'a la station st9 qui la bloque (conformément à la politique de blocage).
+
+	TODO : Tester de st13 et st14 le serveur Web de st8 (qui n'existe pas). --> Comment savoir quel port publique utilisé ?
+
+ay.
