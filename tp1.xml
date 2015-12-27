@@ -800,8 +800,8 @@
       <PosDemoEmission.Y>0</PosDemoEmission.Y>
     </PortSwitch>
     <PortSwitch numero="8">
-      <PosDemoEmission.X>0</PosDemoEmission.X>
-      <PosDemoEmission.Y>0</PosDemoEmission.Y>
+      <PosDemoEmission.X>480</PosDemoEmission.X>
+      <PosDemoEmission.Y>492</PosDemoEmission.Y>
     </PortSwitch>
     <table_port_vlan nbLignes="7">
       <ligne nbValeurs="2" clef="01">
@@ -1003,7 +1003,7 @@
           <valeur>21</valeur>
         </ligne>
       </NatPat>
-      <ReglesFiltrage nbLignes="7">
+      <ReglesFiltrage nbLignes="8">
         <ligne nbValeurs="9" clef="01">
           <valeur>01</valeur>
           <valeur>*</valeur>
@@ -1072,6 +1072,17 @@
         </ligne>
         <ligne nbValeurs="9" clef="07">
           <valeur>07</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>ICMP</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>*</valeur>
+          <valeur>Accepter</valeur>
+        </ligne>
+        <ligne nbValeurs="9" clef="08">
+          <valeur>08</valeur>
           <valeur>*</valeur>
           <valeur>*</valeur>
           <valeur>*</valeur>

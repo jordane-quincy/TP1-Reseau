@@ -141,3 +141,7 @@ Requête de st14 vers l'adresse IP 172.12.0.4 sur le port 50 arrive bien jusqu'a
 
 	TODO : Tester de st13 et st14 le serveur Web de st8 (qui n'existe pas). --> Comment savoir quel port publique utilisé ?
 
+az.
+Sur la station st9, il faut ajouter une règle pour autoriser le protocole ICMP avant la règle de blocage (SCREEN AZ).
+Cette règle permet à st13 et st14 (ainsi qu'aux autres qui postes relié à st9 qui ne doivent pas être explicitement bloquer selon la question)
+de recevoir les messages ICMP.
